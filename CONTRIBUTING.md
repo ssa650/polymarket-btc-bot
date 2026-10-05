@@ -30,6 +30,9 @@ Do not copy deployment grids into public fixtures to make those checks pass. The
 generic suite constructs synthetic strategies, markets and models. A compatible
 PyTorch environment is needed for the optional transformer training test; the
 separate Mac hash lock passed all 32 transformer module tests. Report skips and
-their reasons. `python scripts/check_release.py` audits the prepared one-commit
-snapshot; its expected clean preparation-history count must be updated explicitly
-when intentional source-edition commits are added.
+their reasons. `python scripts/check_release.py` audits the isolated preparation
+checkout: it requires the verified source-only root commit, only the `main` ref,
+no remote or object alternates, a clean tree, and no flagged secrets or private
+artifacts in tracked files or reachable/reflog history. Run it before adding a
+publication remote. Normal clones have a remote and may contain remote-tracking
+refs, so they do not meet these preparation-specific conditions.

@@ -9,6 +9,7 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+PREPARED_ROOT_COMMIT = 'b84676cb7e1b2fbb27aa7dfcbba0a5e520b50b4a'
 PATTERNS = {
     'private_key_block': rb'-----BEGIN (?:RSA |EC |OPENSSH |DSA )?PRIVATE KEY-----',
     'provider_token': rb'(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{30,}|AKIA[A-Z0-9]{16}|sk-(?:proj-)?[A-Za-z0-9_-]{30,}|xox[baprs]-[A-Za-z0-9-]{20,})',
@@ -43,6 +44,7 @@ def audit(root: Path = ROOT) -> dict:
     paths = git('ls-files', '-z').decode().split('\0')[:-1]
     result = {'tracked_files': len(paths), 'findings': [], 'excluded_artifact_violations': [],
               'commit_count': int(git('rev-list', '--count', '--all')),
+              'root_commits': git('rev-list', '--max-parents=0', '--all').decode().splitlines(),
               'refs': git('for-each-ref', '--format=%(refname)').decode().splitlines(),
               'has_remote': bool(git('remote').strip()),
               'has_object_alternates': (root / '.git/objects/info/alternates').exists(),
@@ -64,7 +66,8 @@ def audit(root: Path = ROOT) -> dict:
         result['findings'].extend(findings(git('cat-file', kind, oid),
                                           f'{oid[:12]}:{path or kind}', 'fresh_history'))
     result['passed'] = (not result['findings'] and not result['excluded_artifact_violations']
-                        and result['commit_count'] == 2 and result['refs'] == ['refs/heads/main']
+                        and result['root_commits'] == [PREPARED_ROOT_COMMIT]
+                        and result['refs'] == ['refs/heads/main']
                         and not result['has_remote'] and not result['has_object_alternates']
                         and result['clean'] and result['fsck_ok'])
     return result
