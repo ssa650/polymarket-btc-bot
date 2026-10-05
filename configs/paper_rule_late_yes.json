@@ -1,0 +1,14 @@
+{
+  "rules": [
+    {
+      "id": "late_yes_cheap",
+      "outcome": "YES",
+      "side": "BUY",
+      "order_size": 5,
+      "max_seconds_until_close": 60,
+      "buy_yes_ask_lte": 0.45,
+      "limit_price": 0.45,
+      "emit_once_per_market": true
+    }
+  ]
+}

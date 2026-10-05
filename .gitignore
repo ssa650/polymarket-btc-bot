@@ -1,0 +1,38 @@
+# Local configuration and credentials
+.env
+.env.*
+*.env
+!.env.example
+*.pem
+*.key
+
+# Private observations, experiments, fitted models, and reports
+/data/
+/logs/
+/models/
+/exports/
+/artifacts/
+/private/
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.sqlite
+*.sqlite3
+*.parquet
+*.csv
+*.joblib
+*.pt
+*.pth
+*.log
+
+# Generated code and environments
+__pycache__/
+_compiled/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.DS_Store

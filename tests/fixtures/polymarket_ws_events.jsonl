@@ -1,0 +1,7 @@
+{"event_type":"book","asset_id":"asset_yes","market":"0xcondition","bids":[{"price":"0.48","size":"30"}],"asks":[{"price":"0.52","size":"25"}],"timestamp":"1757908892351","hash":"0xbookhash"}
+{"event_type":"price_change","market":"0xcondition","price_changes":[{"asset_id":"asset_yes","price":"0.50","size":"200","side":"BUY","best_bid":"0.50","best_ask":"0.51"}],"timestamp":"1757908892352"}
+{"event_type":"last_trade_price","asset_id":"asset_yes","market":"0xcondition","price":"0.456","size":"219.217767","fee_rate_bps":"0","side":"BUY","timestamp":"1757908892353","transaction_hash":"0xtradehash"}
+{"event_type":"tick_size_change","asset_id":"asset_yes","market":"0xcondition","old_tick_size":"0.01","new_tick_size":"0.001","timestamp":"1757908892354"}
+{"event_type":"best_bid_ask","market":"0xcondition","asset_id":"asset_yes","best_bid":"0.73","best_ask":"0.77","spread":"0.04","timestamp":"1757908892355"}
+{"event_type":"new_market","id":"1031769","question":"Will Bitcoin be up or down?","market":"0xcondition_new","slug":"btc-updown-5m-1766790300","assets_ids":["asset_new_yes","asset_new_no"],"outcomes":["Yes","No"],"condition_id":"0xcondition_new","active":true,"clob_token_ids":["asset_new_yes","asset_new_no"],"timestamp":"1766790415550","event_message":{"slug":"btc-updown-event"}}
+{"event_type":"market_resolved","id":"1031769","market":"0xcondition_new","assets_ids":["asset_new_yes","asset_new_no"],"winning_asset_id":"asset_new_yes","winning_outcome":"Yes","timestamp":"1766790415551"}

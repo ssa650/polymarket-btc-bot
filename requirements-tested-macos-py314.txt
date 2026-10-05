@@ -1,0 +1,22 @@
+# Observed installed versions used for offline verification on macOS / Python 3.14.6.
+# Includes test dependencies; no PyTorch. Version pins, not an artifact-hash lock.
+# Clean download/install verified; use the artifact-hash lock for this platform.
+# Linux verification remains pending.
+anyio==4.12.1
+certifi==2026.2.25
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+idna==3.11
+iniconfig==2.3.0
+joblib==1.5.3
+numpy==2.4.4
+packaging==26.0
+pluggy==1.6.0
+pyarrow==24.0.0
+Pygments==2.19.2
+pytest==8.4.2
+scikit-learn==1.8.0
+scipy==1.17.1
+threadpoolctl==3.6.0
+websockets==15.0.1

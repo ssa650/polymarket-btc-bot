@@ -1,0 +1,5 @@
+# Optional transformer training and inference. Resolve/pin in a separate
+# supported Python environment. A verified Mac ARM64/CPython 3.14 lock is
+# provided separately in requirements-transformer-macos-arm64-py314.lock.txt.
+-r requirements.txt
+torch>=2,<3

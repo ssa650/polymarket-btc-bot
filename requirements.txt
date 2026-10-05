@@ -1,0 +1,6 @@
+httpx>=0.28,<1
+pyarrow>=24,<25
+scikit-learn>=1.4,<2
+websockets>=15,<16
+numpy>=2,<3
+joblib>=1.5,<2
