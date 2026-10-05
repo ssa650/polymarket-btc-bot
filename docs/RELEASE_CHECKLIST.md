@@ -20,9 +20,13 @@
   the existing local Docker engine is unavailable. Mac source is already verified.
 - [x] Audit candidate files and new local history with redacted heuristic checks,
   excluded-file policy, object/ref checks and Git integrity validation.
-- [ ] Owner performs final rights/source review and publishing approval. The original
-  private history stays excluded; it is not rewritten or included in this candidate.
-- [ ] Owner approves public hosting and metadata. Publishing is outside preparation.
+- [x] Owner authorizes a new public repository under `ssa650`, using existing
+  authentication only. The original private history stays excluded.
+- [ ] Create and verify the new public repository. Publication is currently blocked:
+  local GitHub CLI authentication is absent, the existing Git credential helper
+  returns no credential, and the connected GitHub tools do not expose repository
+  creation. No repository has been created or pushed; authentication has not been
+  created or expanded.
 
 If a credential is subsequently confirmed: record its redacted file/history
 location and type, identify its owner, rotate/revoke through the provider or
