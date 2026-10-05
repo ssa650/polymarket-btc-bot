@@ -1,7 +1,7 @@
 # Contributing
 
-Public contribution hosting and project licensing await owner decisions. Until
-then, prepare local reviewable changes without publishing private history.
+This is the owner-approved Apache-2.0 open-source edition. Contributions should
+use synthetic inputs and preserve the separation from private data/history.
 
 1. Use a clean source copy without private `.env`, data, logs or model artifacts.
 2. On the verified Mac platform, install `requirements-macos-arm64-py314.lock.txt`
@@ -31,5 +31,5 @@ generic suite constructs synthetic strategies, markets and models. A compatible
 PyTorch environment is needed for the optional transformer training test; the
 separate Mac hash lock passed all 32 transformer module tests. Report skips and
 their reasons. `python scripts/check_release.py` audits the prepared one-commit
-snapshot; after intentional development commits, its one-commit rule must be
-reviewed rather than bypassed silently.
+snapshot; its expected clean preparation-history count must be updated explicitly
+when intentional source-edition commits are added.

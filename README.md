@@ -1,4 +1,4 @@
-# Polymarket BTC 5-Minute Recorder and ML Paper-Trading Toolkit
+# Polymarket BTC Bot — Open-Source Edition
 
 Capture Bitcoin Up/Down market data, build research datasets, and evaluate
 model-driven strategies with simulated execution.
@@ -8,11 +8,16 @@ who need a timestamped path from order books and BTC reference prices to offline
 analysis. It combines a Polymarket recorder with baseline and transformer model
 workflows, shadow predictions, paper trading, and local monitoring.
 
-**Status:** local preparation for a possible public source release. Public
-release, ownership review, and license selection are pending. No trained models,
-private datasets, experiment reports, or credentials are included in this
-candidate. The Mac checkout has not been verified against the former Ubuntu
-deployment.
+**This is the open-source copy of Shayan's Polymarket BTC recorder and ML
+paper-trading toolkit**, licensed under [Apache-2.0](LICENSE). The owner confirmed
+the Mac checkout as the latest authoritative source for this edition.
+
+This is a source-only research edition: current trained weights, private training
+data, recorder databases, tuned deployment grids, old experiment artifacts,
+credentials and the original private Git history are excluded. Safe fictional
+data, example configuration and reproducible training/tests are included.
+The edition label describes the licensed source copy; it does not claim
+profitability, production readiness, or an existing hosted deployment.
 
 ## Capabilities
 
@@ -82,8 +87,8 @@ the pipeline; they do not demonstrate market forecasting skill or profitability.
 The baseline's chronological row split can put snapshots of the same market on
 both sides; use separate held-out markets when assessing real predictive validity.
 
-[License recommendation and compatibility tradeoffs](docs/LICENSE_OPTIONS.md)
-remain subject to owner approval.
+[License rationale and compatibility tradeoffs](docs/LICENSE_OPTIONS.md) describe
+the owner-approved Apache-2.0 choice.
 
 Current fitted weights and private observations are excluded by the owner's
 code-first release decision. A future demo checkpoint would need a separate
@@ -167,15 +172,16 @@ safe local contribution path.
   existing joblib/PyTorch loaders deserialize files.
 - No authentication layer is claimed for local dashboards. Keep the default
   loopback binding and review exposure before changing it.
-- Existing Git history contains private recorded/derived artifacts. Ignore rules
-  do not remove tracked files or historical exposure. Do not publish that history
-  until the owner approves a release method and data handling.
+- The original private repository's history contains recorded/derived artifacts.
+  This edition has separate clean history and excludes those objects. Keep the
+  original history private; ignore rules alone do not remove historical exposure.
 
 ## License and project metadata
 
-A project license has not been selected or applied. The owner must confirm rights
-and select a license before public release. Third-party dependencies retain their
-own licenses; see [dependency inventory](docs/DEPENDENCIES.md).
+The owner approved [Apache-2.0](LICENSE) for this open-source edition. See
+[NOTICE](NOTICE) and [third-party notices](THIRD_PARTY_NOTICES.md). Dependencies
+retain their own licenses; see [dependency inventory](docs/DEPENDENCIES.md).
+Private weights and datasets are not included or licensed by this source release.
 
 [Suggested GitHub About text and topics](docs/DISCOVERY.md) are provided for owner
 review. No remote metadata has changed. If the synthetic workflow helps your

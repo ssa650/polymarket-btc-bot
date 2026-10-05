@@ -1,13 +1,12 @@
-# Project license recommendation for owner approval
+# Applied project license and compatibility notes
 
-**Recommendation: Apache-2.0**, subject to confirming ownership and all included
-code/fixture rights. It suits a reusable ML/data-engineering toolkit because it
+**Owner-approved license: Apache-2.0**, applied in the root LICENSE and NOTICE. It suits a reusable ML/data-engineering toolkit because it
 offers permissive reuse plus an explicit contributor patent grant and patent
 termination rule. The tradeoff is more redistribution/notice/change requirements
-than MIT. No project license or copyright header has been applied.
+than MIT. Dependency licenses remain separate.
 [Apache-2.0 terms](https://www.apache.org/licenses/LICENSE-2.0).
 
-**Alternative: MIT** if the owner prioritizes a shorter permissive license. Its
+**Alternative considered: MIT**, a shorter permissive license. Its
 text requires retaining the copyright/permission notice and disclaims warranty;
 it has no comparable express patent clause. [MIT terms](https://opensource.org/license/mit).
 
@@ -33,8 +32,6 @@ Compatibility considerations for this source-only candidate:
   relicense GPL code as Apache/MIT.
   [Apache compatibility FAQ](https://www.apache.org/foundation/license-faq.html).
 
-This is an evidence-based preparation recommendation, not rights clearance.
-Owner approval must cover the actual source/fixtures and contributor ownership.
+This records the approved code-license decision, not universal rights clearance.
 Private datasets and existing trained weights are excluded; their rights are not
-resolved by choosing a code license. Final license application and public hosting
-are separate decisions.
+resolved by choosing a code license. Public hosting is a separate operation.

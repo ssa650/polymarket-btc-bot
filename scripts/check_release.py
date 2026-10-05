@@ -64,7 +64,7 @@ def audit(root: Path = ROOT) -> dict:
         result['findings'].extend(findings(git('cat-file', kind, oid),
                                           f'{oid[:12]}:{path or kind}', 'fresh_history'))
     result['passed'] = (not result['findings'] and not result['excluded_artifact_violations']
-                        and result['commit_count'] == 1 and result['refs'] == ['refs/heads/main']
+                        and result['commit_count'] == 2 and result['refs'] == ['refs/heads/main']
                         and not result['has_remote'] and not result['has_object_alternates']
                         and result['clean'] and result['fsck_ok'])
     return result

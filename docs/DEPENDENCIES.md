@@ -51,12 +51,9 @@ third-party binaries, and evaluate component/source obligations for that form.
 Linux installation and source parity with Ubuntu remain unverified because no
 usable registered Ubuntu environment or running local Docker engine was available.
 
-No root LICENSE, COPYING or NOTICE was found among tracked files. A suitable
-owner-review option is [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0),
-which provides an explicit contributor patent grant and retention/redistribution
-conditions. [MIT](https://opensource.org/license/mit) is a simpler permissive
-alternative. No license text or grant has been applied. The owner must decide,
-confirm authorship/rights and attribution needs, and separately review API data,
-trained models, fixtures and any copied third-party code.
-
-See [license recommendation and tradeoffs](LICENSE_OPTIONS.md) for owner approval.
+The owner approved Apache-2.0 for this original source edition; root LICENSE and
+NOTICE now contain the grant and project attribution. Third-party dependencies
+retain their own licenses. No wheels/binaries are vendored; private datasets and
+current fitted weights remain excluded and are not relicensed. See
+[third-party notices](../THIRD_PARTY_NOTICES.md) and
+[license rationale/compatibility](LICENSE_OPTIONS.md).

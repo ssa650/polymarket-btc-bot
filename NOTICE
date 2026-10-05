@@ -1,0 +1,18 @@
+Polymarket BTC 5-Minute Recorder and ML Paper-Trading Toolkit
+Open-Source Edition
+Copyright 2026 Shayan
+
+This project's original source, documentation, and fictional examples are
+licensed under the Apache License, Version 2.0. See LICENSE.
+
+The open-source edition is prepared from the owner-confirmed authoritative
+Mac source. Recorder/model runtime code is preserved. Documentation,
+configuration, dependency locks, synthetic examples, and test support were
+updated for the source-only edition; see SOURCE_PROVENANCE.md.
+
+External dependencies retain their own licenses and notices. No dependency
+wheels, trained weights, private observations, databases, or historical
+experiment artifacts are bundled. See THIRD_PARTY_NOTICES.md and the
+dependency/license inventories in docs/.
+
+This notice is informational and does not alter the terms of LICENSE.
